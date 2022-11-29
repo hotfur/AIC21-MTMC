@@ -1,0 +1,13 @@
+__pycache__/
+datasets/**/*.txt
+visualizer/**/*.txt
+exp/
+*.tar*
+*.zip
+*.jpg
+*.mp4
+*.avi
+*.pt
+*.pth
+*.png
+*.pkl
