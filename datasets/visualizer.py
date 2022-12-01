@@ -10,12 +10,12 @@ def get_arguments():
             epilog = 'Text at the bottom of help')
 
     parser.add_argument('-d', '--data', default='./AIC21_Track3_MTMC_Tracking/test/S06')              # path to data directory
-    parser.add_argument('-p', '--pred', default='./tests/track3.txt')         # path to prediction file
+    parser.add_argument('-p', '--pred', default='./tests_results/track3.txt')         # path to prediction file
     parser.add_argument('-o', '--out', default='./pred_visual_results')             # path to output folder
 
     parser.add_argument('-w', '--write', action='store_true')    # on/off flag
     
-    return parser.parse_args
+    return parser.parse_args()
 
 
 def get_captures(data_path, vids):

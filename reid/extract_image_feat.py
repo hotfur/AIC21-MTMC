@@ -16,8 +16,8 @@ import sys
 sys.path.append('../')
 from config import cfg
 
-BATCH_SIZE = 32 # 64 is possible
-NUM_PROCESS = 6
+BATCH_SIZE = 64 # 64 is possible
+NUM_PROCESS = 4
 def chunks(l):
     return [l[i:i+BATCH_SIZE] for i in range(0, len(l), BATCH_SIZE)]
 

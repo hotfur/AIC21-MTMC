@@ -1,0 +1,12 @@
+/home/sieu/anaconda3/envs/ML_Synh_prj/bin/python /mnt/ml-data/AIC21-MTMC/eval/eval.py track3_yolov7.txt -ds test 
+ROIs/test/c041/roi.jpg
+ROIs/test/c042/roi.jpg
+ROIs/test/c043/roi.jpg
+ROIs/test/c044/roi.jpg
+ROIs/test/c045/roi.jpg
+ROIs/test/c046/roi.jpg
+          IDF1   IDP   IDR
+MultiCam 82.58 82.33 82.83
+
+Process finished with exit code 0
+

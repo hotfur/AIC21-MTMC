@@ -15,7 +15,7 @@ def get_arguments():
 
     parser.add_argument('-w', '--write', action='store_true')    # on/off flag
     
-    return parser.parse_args
+    return parser.parse_args()
 
 
 def get_captures(data_path, vids):
