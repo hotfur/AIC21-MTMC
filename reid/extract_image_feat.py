@@ -17,7 +17,7 @@ sys.path.append('../')
 from config import cfg
 
 BATCH_SIZE = 32 # 64 is possible
-NUM_PROCESS = 4
+NUM_PROCESS = 6
 def chunks(l):
     return [l[i:i+BATCH_SIZE] for i in range(0, len(l), BATCH_SIZE)]
 
@@ -130,7 +130,7 @@ def extract_image_feat(_cfg):
 
     num_process = NUM_PROCESS
     gpu_ids = Queue()
-    gpu_id_cycle_iterator = cycle(range(0, 4))
+    gpu_id_cycle_iterator = cycle(range(0, 2))
     for _ in range(num_process):
         gpu_ids.put(next(gpu_id_cycle_iterator))
 

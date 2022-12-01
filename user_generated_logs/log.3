@@ -1,0 +1,291 @@
+(ML_Synh_prj) sieu@sieu-desktop:/mnt/ml-data/AIC21-MTMC$ ./run_all.sh
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+51378 images for c04119
+0 images for c0435
+0 images for c0432
+28448 images for c04410
+50626 images for c04215
+34664 images for c04516
+0 images for c0463
+0 images for c0414
+0 images for c044
+321 images for c04126
+0 images for c04511
+0 images for c04411
+0 images for c04313
+0 images for c0433
+195 images for c0448
+0 images for c04122
+0 images for c0412
+43754 images for c04315
+0 images for c0413
+0 images for c04414
+0 images for c04214
+0 images for c0443
+100 images for c04613
+51378 images for c04124
+0 images for c0434
+0 images for c0454
+0 images for c04412
+0 images for c0465
+32219 images for c04416
+1861 images for c04610
+9351 images for c04615
+1202 images for c0467
+0 images for c0423
+50621 images for c0426
+0 images for c042
+15293 images for c0429
+0 images for c0419
+22033 images for c04116
+216 images for c04612
+20928 images for c04616
+0 images for c0462
+51380 images for c04113
+51380 images for c04112
+0 images for c04212
+4719 images for c0447
+0 images for c0455
+51380 images for c04111
+51378 images for c04127
+2400 images for c0457
+20862 images for c0466
+0 images for c0452
+0 images for c0442
+23302 images for c04125
+189 images for c0458
+43718 images for c0436
+758 images for c04614
+0 images for c046
+4476 images for c04510
+230 images for c0468
+43759 images for c04316
+0 images for c0416
+34375 images for c0456
+1316 images for c04514
+0 images for c0417
+573 images for c0469
+0 images for c0424
+8896 images for c04117
+17194 images for c0427
+272 images for c04512
+0 images for c04123
+0 images for c0453
+0 images for c0444
+0 images for c04121
+32225 images for c04415
+0 images for c0464
+10500 images for c0439
+19367 images for c04118
+149 images for c04513
+928 images for c0459
+0 images for c04314
+0 images for c041
+51380 images for c04114
+0 images for c045
+51380 images for c04110
+0 images for c0418
+0 images for c0425
+0 images for c04213
+0 images for c0445
+37733 images for c04310
+32206 images for c0446
+51380 images for c04115
+50626 images for c04210
+13081 images for c04515
+0 images for c04120
+0 images for c04611
+148 images for c0438
+0 images for c04211
+0 images for c04312
+2466 images for c0428
+0 images for c04413
+0 images for c04311
+50626 images for c04216
+2658 images for c0437
+0 images for c043
+0 images for c0415
+0 images for c0422
+8401 images for c0449
+1242399 images in total
+init reid model
+abs path is /mnt/ml-data/AIC21-MTMC/reid/reid_inference/reid_model.py
+init reid model
+abs path is /mnt/ml-data/AIC21-MTMC/reid/reid_inference/reid_model.py
+init reid model
+abs path is /mnt/ml-data/AIC21-MTMC/reid/reid_inference/reid_model.py
+  0%|                                                                                                                                                                                                | 0/38825 [00:00<?, ?it/s]===========ResNet===========
+===========ResNet===========
+===========ResNet===========
+using resnet101_ibn_a as a backbone
+using resnet101_ibn_a as a backbone
+using resnet101_ibn_a as a backbone
+Loading pretrained model from reid_model/resnet101_ibn_a_2.pth
+Loading pretrained model from reid_model/resnet101_ibn_a_2.pth
+Loading pretrained model from reid_model/resnet101_ibn_a_2.pth
+/home/sieu/anaconda3/envs/ML_Synh_prj/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/sieu/anaconda3/envs/ML_Synh_prj/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/sieu/anaconda3/envs/ML_Synh_prj/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 38825/38825 [4:08:56<00:00,  2.60it/s]
+14936.4217 s
+Traceback (most recent call last):
+  File "extract_image_feat.py", line 172, in <module>
+    main()
+  File "extract_image_feat.py", line 168, in main
+    extract_image_feat(cfg)
+  File "extract_image_feat.py", line 151, in extract_image_feat
+    save_feature(_cfg.DATA_DIR, _cfg.DET_IMG_DIR, pool_output)
+  File "extract_image_feat.py", line 109, in save_feature
+    det_dic = pickle.load(open(dets_pkl_file, 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/ml-data/AIC21-MTMC/datasets/detect_merge/c04119/c04119_dets.pkl'
+51378 images for c04119
+0 images for c0435
+0 images for c0432
+28448 images for c04410
+50626 images for c04215
+34664 images for c04516
+0 images for c0463
+0 images for c0414
+0 images for c044
+321 images for c04126
+0 images for c04511
+0 images for c04411
+0 images for c04313
+0 images for c0433
+195 images for c0448
+0 images for c04122
+0 images for c0412
+43754 images for c04315
+0 images for c0413
+0 images for c04414
+0 images for c04214
+0 images for c0443
+100 images for c04613
+51378 images for c04124
+0 images for c0434
+0 images for c0454
+0 images for c04412
+0 images for c0465
+32219 images for c04416
+1861 images for c04610
+9351 images for c04615
+1202 images for c0467
+0 images for c0423
+50621 images for c0426
+0 images for c042
+15293 images for c0429
+0 images for c0419
+22033 images for c04116
+216 images for c04612
+20928 images for c04616
+0 images for c0462
+51380 images for c04113
+51380 images for c04112
+0 images for c04212
+4719 images for c0447
+0 images for c0455
+51380 images for c04111
+51378 images for c04127
+2400 images for c0457
+20862 images for c0466
+0 images for c0452
+0 images for c0442
+23302 images for c04125
+189 images for c0458
+43718 images for c0436
+758 images for c04614
+0 images for c046
+4476 images for c04510
+230 images for c0468
+43759 images for c04316
+0 images for c0416
+34375 images for c0456
+1316 images for c04514
+0 images for c0417
+573 images for c0469
+0 images for c0424
+8896 images for c04117
+17194 images for c0427
+272 images for c04512
+0 images for c04123
+0 images for c0453
+0 images for c0444
+0 images for c04121
+32225 images for c04415
+0 images for c0464
+10500 images for c0439
+19367 images for c04118
+149 images for c04513
+928 images for c0459
+0 images for c04314
+0 images for c041
+51380 images for c04114
+0 images for c045
+51380 images for c04110
+0 images for c0418
+0 images for c0425
+0 images for c04213
+0 images for c0445
+37733 images for c04310
+32206 images for c0446
+51380 images for c04115
+50626 images for c04210
+13081 images for c04515
+0 images for c04120
+0 images for c04611
+148 images for c0438
+0 images for c04211
+0 images for c04312
+2466 images for c0428
+0 images for c04413
+0 images for c04311
+50626 images for c04216
+2658 images for c0437
+0 images for c043
+0 images for c0415
+0 images for c0422
+8401 images for c0449
+1242399 images in total
+init reid model
+abs path is /mnt/ml-data/AIC21-MTMC/reid/reid_inference/reid_model.py
+init reid model
+abs path is /mnt/ml-data/AIC21-MTMC/reid/reid_inference/reid_model.py
+init reid model
+abs path is /mnt/ml-data/AIC21-MTMC/reid/reid_inference/reid_model.py
+  0%|                                                                                                                                                                                                | 0/38825 [00:00<?, ?it/s]===========ResNet===========
+===========ResNet===========
+===========ResNet===========
+using resnext101_ibn_a as a backbone
+using resnext101_ibn_a as a backbone
+using resnext101_ibn_a as a backbone
+Loading pretrained model from reid_model/resnext101_ibn_a_2.pth
+Loading pretrained model from reid_model/resnext101_ibn_a_2.pth
+Loading pretrained model from reid_model/resnext101_ibn_a_2.pth
+/home/sieu/anaconda3/envs/ML_Synh_prj/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/sieu/anaconda3/envs/ML_Synh_prj/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/sieu/anaconda3/envs/ML_Synh_prj/lib/python3.8/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 38824/38825 [6:11:30<00:00,  1.59it/s]
