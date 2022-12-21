@@ -153,9 +153,9 @@ def detect(save_img=False):
                     if x1 < 0 or y1 < 0 or x2 > im0.shape[1]-1  or y2 > im0.shape[0]-1:
                         # print('clip bbox')
                         continue
-                    # if (y2-y1) * (x2-x1) < 1000:    # TODO: filter small bboxes
-                    #     # print('det too small')
-                    #     continue
+                    if (y2-y1) * (x2-x1) < 600:    # TODO: filter small bboxes
+                        #print('det too small')
+                        continue
                     if save_txt:  # Write to file
                         xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()  # normalized xywh
                         line = (cls, *xywh, conf) if opt.save_conf else (cls, *xywh)  # label format

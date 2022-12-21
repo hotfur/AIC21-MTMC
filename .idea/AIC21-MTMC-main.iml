@@ -10,7 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/reid/reid-matching/tools/exp" />
       <excludeFolder url="file://$MODULE_DIR$/tracker/MOTBaseline/src/post_processing/cache" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (ML_Synh_prj)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="AIC21_MTMC" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

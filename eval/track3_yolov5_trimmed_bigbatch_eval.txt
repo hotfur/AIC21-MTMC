@@ -1,0 +1,11 @@
+/opt/anaconda3/envs/AIC21_MTMC/bin/python /home/sieu/PycharmProjects/AIC21-MTMC/eval/eval.py track3_yolov5_trimmed_bigbatch.txt -ds test 
+ROIs/test/c041/roi.jpg
+ROIs/test/c042/roi.jpg
+ROIs/test/c043/roi.jpg
+ROIs/test/c044/roi.jpg
+ROIs/test/c045/roi.jpg
+ROIs/test/c046/roi.jpg
+          IDF1   IDP   IDR
+MultiCam 84.33 84.44 84.22
+
+Process finished with exit code 0

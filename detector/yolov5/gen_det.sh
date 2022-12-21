@@ -8,3 +8,4 @@ do
     wait
 done
 wait
+CUDA_VISIBLE_DEVICES="0,1" python detect2img.py --name c042 --weights yolov5x.pt --conf 0.1 --agnostic --save-txt --save-conf --img-size 1280 --classes 2 5 7 --cfg_file $1&
